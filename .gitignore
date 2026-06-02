@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyi
+.venv/
+venv/
+env/
+**/site-packages/
+**/lib/python*/
+# Node / build output
+node_modules/
+dist/
+build/
+*.map
+# OS / IDE
+.DS_Store
+.claude/worktrees/
+# Large GIS data (keep on SSD, not git)
+*.dat
+*.tif
+*.tiff
+*.las
+*.laz

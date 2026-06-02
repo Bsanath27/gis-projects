@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "GIS Map Server",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8000", "--directory", "/Users/sanathbs/03_Dev_Lab/gis-projects"],
+      "port": 8000
+    },
+    {
+      "name": "TN Pincodes Server",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8001", "--directory", "/Users/sanathbs/03_Dev_Lab/gis-projects/tn-pincodes"],
+      "port": 8001
+    },
+    {
+      "name": "Tennis Court FastAPI",
+      "runtimeExecutable": "uvicorn",
+      "runtimeArgs": ["app:app", "--reload", "--port", "8002", "--app-dir", "/Users/sanathbs/03_Dev_Lab/gis-projects/tennis-court"],
+      "port": 8002
+    }
+  ]
+}
